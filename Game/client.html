@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CookieClicker</title>
+    <link rel="stylesheet" href="gamestyles.css">
+</head>
+<body>
+    
+    <header>Cookie Clicker</header>
+
+    <button id="devButton">dev button</button><br>
+    
+    <h1>CookieClicker</h1>
+    
+    <h3>Total Cookies:</h3><div id="totalCookies">0</div><br>
+
+<button id="getCookie"></button><br><br><br>
+<h2>upgrades</h2>
+<div>
+    +1 Cookie Per Click<button class="automationBtn" id="addClick">1</button>
+     Cost: <span id="addClickCost">10</span> Cookies<br>
+</div><br>
+<section id="clickerPhotos"><div class="swatch"><img src="resources/PngItem_113733.png" height="200"></section></div>
+<br><p><h2>Automation</h2></p><br>
+<div class="automated" id="grandmaDiv">
+    <label for="addGrandma">Buy a grandma</label>
+    <button class="automationBtn" id="addGrandma">0</button><br>
+    cost: <span id="grandmaCost">50</div><br>
+</div>
+<section id="grannyPhotos"></section>
+<div class="automated" id="bakeryDiv">
+    <label for="addBakery">Buy a Bakery</label>
+    <button class="automationBtn" id="addBakery">0</button><br>
+    cost: <span id="bakeryCost">300</span><br><br>
+</div>
+<section id="bakeryPhotos"></section>
+<div class="automated" id="factoryDiv">
+    <label for="addFactory">Buy a Factory</label>
+    <button class="automationBtn" id="addFactory">0</button><br>
+    cost: <span id="factoryCost">1000</span><br>
+</div>
+<section id="factoryPhotos"></section>
+<h2>Leaderboards</h2>
+
+<form id="statsForm"> Submit stats
+    <input id="playerName" type="text" placeholder="name"><br>
+    <input id="postLeaderboard" type="submit" value="Submit">
+</form>
+
+<section id="statsSection"></section>
+<section id="leaderBoard-container"></section>
+
+
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
