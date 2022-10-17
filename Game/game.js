@@ -123,7 +123,7 @@ function factoryCostInc(){
 }
 function getFactory(){
     if (cookieCount >= factoryCost && totalFactories === 0){
-        totalFactories += 1,cookieCount -= factoryCost , factoryCostInc(), alert("Who knew the cookie industry was so hot?")
+        totalFactories += 1,cookieCount -= factoryCost , factoryCostInc(), alert("You just opened a Factory, Who knew the cookie industry was so hot?")
         let images = document.createElement("div");
             images.innerHTML = `<img src="resources/biscuit-machine.gif" height="200">`
             images.setAttribute('class','swatch')
